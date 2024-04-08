@@ -1,8 +1,7 @@
-﻿using AuctionService.Data;
-using AuctionService.Entities;
+﻿using AuctionService.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace AuctionService;
+namespace AuctionService.Data;
 
 public class DbInitializer
 {
@@ -10,7 +9,9 @@ public class DbInitializer
     {
         using var scope = app.Services.CreateScope();
 
+#pragma warning disable CS8604 // Possible null reference argument.
         SeedData(scope.ServiceProvider.GetService<AuctionDbContext>());
+#pragma warning restore CS8604 // Possible null reference argument.
     }
 
     private static void SeedData(AuctionDbContext context)

@@ -40,7 +40,7 @@ namespace AuctionService.Data.Migrations
                     b.Property<int?>("CurrentHighBid")
                         .HasColumnType("integer");
 
-                    b.Property<int>("ReservedPrice")
+                    b.Property<int>("ReservePrice")
                         .HasColumnType("integer");
 
                     b.Property<string>("Seller")
@@ -86,7 +86,7 @@ namespace AuctionService.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("Milage")
+                    b.Property<int>("Mileage")
                         .HasColumnType("integer");
 
                     b.Property<string>("Model")

@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Http.Features;
-
 namespace AuctionService.Entities;
 
 public class Auction
@@ -10,7 +8,7 @@ public class Auction
 
     public string Seller { get; set; }
 
-    public string Winner { get; set; }
+    public string? Winner { get; set; }
 
     public int? SoldAmount { get; set; }
 
