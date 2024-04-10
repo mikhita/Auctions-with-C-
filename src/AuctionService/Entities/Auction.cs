@@ -2,6 +2,8 @@ namespace AuctionService.Entities;
 
 public class Auction
 {
+    internal readonly Auction None;
+
     public Guid Id { get; set; }
 
     public int ReservePrice { get; set; } = 0;
@@ -24,5 +26,8 @@ public class Auction
 
     public Item Item { get; set; }
 
-
+    public Auction()
+    {
+        Seller = "";
+    }
 }

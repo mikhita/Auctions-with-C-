@@ -28,5 +28,13 @@ public class CreateAuctionDto
     [Required]
     public DateTime AuctionEnd { get; set; }
 
+    public CreateAuctionDto()
+    {
+        Make = string.Empty;
+        Model = string.Empty;
+        Color = string.Empty;
+        ImageUrl = string.Empty;
+    }
+
 
 }
