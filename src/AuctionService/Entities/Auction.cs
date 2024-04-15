@@ -2,7 +2,7 @@ namespace AuctionService.Entities;
 
 public class Auction
 {
-    internal readonly Auction None;
+    // internal readonly Auction None;
 
     public Guid Id { get; set; }
 
@@ -10,7 +10,7 @@ public class Auction
 
     public string Seller { get; set; }
 
-    public string? Winner { get; set; }
+    public string Winner { get; set; }
 
     public int? SoldAmount { get; set; }
 

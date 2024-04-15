@@ -45,3 +45,14 @@ C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Npgsql.dll
 C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
 C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\MassTransit.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\MassTransit.Abstractions.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Contracts.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Contracts.pdb
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\MassTransit.EntityFrameworkCoreIntegration.dll
