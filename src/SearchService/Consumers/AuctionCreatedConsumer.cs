@@ -1,5 +1,4 @@
-﻿
-using AutoMapper;
+﻿using AutoMapper;
 using Contracts;
 using MassTransit;
 using MongoDB.Entities;
@@ -19,6 +18,8 @@ public class AuctionCreatedConsumer : IConsumer<AuctionCreated>
         Console.WriteLine("--> Consuming auction created: " + context.Message.Id);
 
         var item = _mapper.Map<Item>(context.Message);
+
+        if (item.Model == "Foo") throw new ArgumentException("Cannot cell cars with name of Foo");
 
         await item.SaveAsync();
     }
