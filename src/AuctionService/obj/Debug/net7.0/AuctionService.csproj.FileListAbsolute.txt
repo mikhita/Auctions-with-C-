@@ -56,3 +56,11 @@ C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\RabbitMQ.Client.d
 C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Contracts.dll
 C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Contracts.pdb
 C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\MassTransit.EntityFrameworkCoreIntegration.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\PC_LION\Carsties2\src\AuctionService\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

@@ -10,7 +10,6 @@ namespace IdentityService.Pages.Register
 {
     [SecurityHeaders]
     [AllowAnonymous]
-    
     public class Index : PageModel
     {
         public readonly UserManager<ApplicationUser> _userManager;
