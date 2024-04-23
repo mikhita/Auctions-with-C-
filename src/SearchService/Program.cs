@@ -7,10 +7,12 @@ using SearchService;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 builder.Services.AddHttpClient<AuctionSvcHttpClient>().AddPolicyHandler(GetPolicy());
+
 builder.Services.AddMassTransit(x => 
 {
     x.AddConsumersFromNamespaceContaining<AuctionCreatedConsumer>();
@@ -19,10 +21,15 @@ builder.Services.AddMassTransit(x =>
 
     x.UsingRabbitMq((context, cfg) => 
     {
-        cfg.ReceiveEndpoint("search-auction-created", e =>
+        cfg.Host(builder.Configuration["RabbitMq:Host"], "/", host =>
         {
-            e.UseMessageRetry(r => r.Interval(5,5));
+            host.Username(builder.Configuration.GetValue("RabbitMq:Username", "guest"));
+            host.Password(builder.Configuration.GetValue("RabbitMq:Password", "guest"));
+        });
 
+        cfg.ReceiveEndpoint("search-auction-created", e => 
+        {
+            e.UseMessageRetry(r => r.Interval(5, 5));
             e.ConfigureConsumer<AuctionCreatedConsumer>(context);
         });
 
@@ -30,27 +37,23 @@ builder.Services.AddMassTransit(x =>
     });
 });
 
-
 var app = builder.Build();
-
-
+// Configure the HTTP request pipeline.
 app.UseAuthorization();
 
 app.MapControllers();
 
 app.Lifetime.ApplicationStarted.Register(async () =>
+{
+    try
     {
-        try
-        {
-            await DbInitializer.InitDb(app);
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-        }
+        await DbInitializer.InitDb(app);
     }
-);
-
+    catch (Exception e)
+    {
+        Console.WriteLine(e);
+    }
+});
 
 app.Run();
 

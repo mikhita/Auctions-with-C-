@@ -36,15 +36,6 @@ namespace AuctionService.DTOs
 
         public string ImageUrl { get; set; }
 
-        public AuctionDto()
-        {
-            Seller = string.Empty;
-            Winner = string.Empty;
-            Status = string.Empty;
-            Make = string.Empty;
-            Model = string.Empty;
-            Color = string.Empty;
-            ImageUrl = string.Empty;
-        }
+        
     }
 }

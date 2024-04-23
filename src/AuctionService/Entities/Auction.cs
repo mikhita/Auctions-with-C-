@@ -26,8 +26,5 @@ public class Auction
 
     public Item Item { get; set; }
 
-    public Auction()
-    {
-        Seller = "";
-    }
+    
 }
