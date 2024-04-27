@@ -22,7 +22,7 @@ services:
       - 5672:5672
       - 15672:15672
   auction-svc:
-    image: trycatchlearn/auction-svc:latest
+    image: fullmisha/auction-svc:latest
     build: 
       context: .
       dockerfile: src/AuctionService/Dockerfile
@@ -38,7 +38,7 @@ services:
       - postgres
       - rabbitmq
   search-svc:
-    image: trycatchlearn/search-svc:latest
+    image: fullmisha/search-svc:latest
     build: 
       context: .
       dockerfile: src/SearchService/Dockerfile
@@ -54,7 +54,7 @@ services:
       - mongodb
       - rabbitmq
   identity-svc:
-    image: trycatchlearn/identity-svc:latest
+    image: fullmisha/identity-svc:latest
     build: 
       context: .
       dockerfile: src/IdentityService/Dockerfile
@@ -67,7 +67,7 @@ services:
     depends_on:
       - mongodb
   gateway-svc:
-    image: trycatchlearn/gateway-svc:latest
+    image: fullmisha/gateway-svc:latest
     build: 
       context: .
       dockerfile: src/GatewayService/Dockerfile

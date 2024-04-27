@@ -1,21 +1,35 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import AuctionCard from './AuctionCard';
+import { Auction } from '@/types';
+import AppPagination from '../components/AppPagination';
+import { getData } from '../actions/auctionAction';
+import Filters from './Filters';
 
-async function getData() {
-    const res = await fetch('http://localhost:6001/search?pageSize=10');
+export default function Listings() {
 
-    if(!res.ok ) throw new Error('Failed to fetch data');
 
-    return res.json();
-}
+  useEffect(()=> {
+    getData(pageNumber, pageSize).then(data => {
+      setAuctions(data.results);
+      setPageCount(data.pageCount)
+    })
+  }, [pageNumber, pageSize])
 
-export default async function Listings() {
-    const data = await getData();
+  if(auctions.length === 0) return <h3>Loading...</h3>
+  
   return (
-    <div className='grid grid-cols-4 gap-5'>
-    {data && data.results.map((auction: any)=> (
-        <AuctionCard auction={auction} key={auction.id}/> 
-    ))}
-    </div>
+    <>
+      <Filters pageSize={pageSize} setPageSize={setPageSize}/>
+      <div className='grid grid-cols-4 gap-5'>
+      {auctions.map( auction => (
+          <AuctionCard auction={auction} key={auction.id}/> 
+      ))}
+      </div>
+      <div className='flex justify-center mt-4'>
+        <AppPagination pageChanged={setPageNumber} currentPage={pageNumber} pageCount={pageCount} />
+      </div>
+    </>
   )
 }
