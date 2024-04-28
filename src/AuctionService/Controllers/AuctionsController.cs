@@ -82,6 +82,8 @@ public class AuctionsController : ControllerBase
         var auction = await _context.Auctions.Include(x => x.Item)
             .FirstOrDefaultAsync(x => x.Id == id);
 
+
+        Console.WriteLine("Selected auction: " + auction.Id + " " + auction.Seller);
         if(auction == null) return NotFound();
 
         if (auction.Seller != User.Identity.Name) return Forbid();
@@ -113,6 +115,8 @@ public class AuctionsController : ControllerBase
         if (auction.Seller != User.Identity.Name) return Forbid();
 
         _context.Auctions.Remove(auction);
+
+        await _publishEndpoint.Publish<AuctionDeleted>(new { Id = auction.Id.ToString() });
 
         var result = await _context.SaveChangesAsync() > 0;
 
