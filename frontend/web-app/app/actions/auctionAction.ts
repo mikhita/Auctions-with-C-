@@ -2,6 +2,7 @@
 
 import { Auction, PageResult } from "@/types";
 
+
 export async function getData(query: string): Promise<PageResult<Auction>> {
     const res = await fetch(`http://localhost:6001/search${query}`);
 
@@ -9,3 +10,4 @@ export async function getData(query: string): Promise<PageResult<Auction>> {
 
     return res.json();
 } 
+
