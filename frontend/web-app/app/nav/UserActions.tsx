@@ -30,9 +30,9 @@ export default function UserActions({user}: Props) {
           Sell my car
         </Link>
       </Dropdown.Item>
-      <Dropdown.Item icon = {HiCog}>
+      <Dropdown.Item icon={HiCog}>
         <Link href='/session'>
-        Session (dev only)
+          Session (dev only)
         </Link>
       </Dropdown.Item>
       <Dropdown.Divider />
