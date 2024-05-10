@@ -2,7 +2,7 @@ import React from 'react'
 import Search from './Search'
 import Logo from './Logo'
 import LoginButton from './LoginButton'
-import { getCurrentUser } from '../actions/authAuction'
+import { getCurrentUser } from '../actions/authAuctions'
 import UserActions from './UserActions'
 
 export default async function Navbar() {
