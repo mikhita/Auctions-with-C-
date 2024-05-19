@@ -1,13 +1,13 @@
 'use server'
 
-import { Auction, PageResult } from "@/types";
+import { Auction, Bid, PagedResult } from "@/types";
 // import { getTokenWorkaround } from "./authAuctions";
 import { fetchWrapper } from "@/lib/fetchWrapper";
 import { FieldValues } from "react-hook-form";
 import { revalidatePath } from "next/cache";
 
 
-export async function getData(query: string): Promise<PageResult<Auction>> {
+export async function getData(query: string): Promise<PagedResult<Auction>> {
     return await fetchWrapper.get(`search${query}`)
 } 
 
@@ -37,11 +37,13 @@ export async function deleteAuction(id: string) {
     return await fetchWrapper.del(`auctions/${id}`);
 }
 
-// export async function getBidsForAuction(id: string): Promise<Bid[]> {
-//     return await fetchWrapper.get(`bids/${id}`);
-// }
+export async function getBidsForAuction(id: string): Promise<Bid[]> {
+    return await fetchWrapper.get(`bids/${id}`);
+}
 
-// export async function placeBidForAuction(auctionId: string, amount: number) {
-//     return await fetchWrapper.post(`bids?auctionId=${auctionId}&amount=${amount}`, {})
-// }
+export async function placeBidForAuction(auctionId: string, amount: number) {
+    return await fetchWrapper.post(`bids?auctionId=${auctionId}&amount=${amount}`, {})
+}
+
+
 

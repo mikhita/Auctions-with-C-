@@ -1,5 +1,5 @@
 import React from 'react'
-import { getSession, getTokenWorkaround } from '../actions/authAuctions'
+import { getSession, getTokenWorkaround } from '../actions/authActions'
 import Heading from '../components/Heading';
 import AuthTest from './AuthTest';
 
