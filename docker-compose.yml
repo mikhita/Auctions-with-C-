@@ -154,6 +154,8 @@ services:
       - NEXTAUTH_URL_INTERNAL=http://web-app:3000
       - API_URL=http://gateway-svc/
       - ID_URL=http://id.carsties.com
+      - CLIENT_SECRET=secret
       - NEXT_PUBLIC_NOTIFY_URL=http://gateway-svc/notifications
     networks:
       custom:
+  

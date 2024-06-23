@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4Dd1Nq6dOxgn9tDQL6LBj4MC6GG30gVpDlOuJp3hkj/I8IKTIXcq/t0t/3PCo+ob5u7+96jo7P1Je68kLJHHgw==",
+  "dgSpecHash": "E8nsDUTylPe8dbWuLyUhNp5CcrpQB0JeCvpSX1E0C5ZitG0Y6HzHWDqwQAm8/6Qvm/QZKEPzH4EAaesnHJQmRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\PC_LION\\Carsties2\\src\\AuctionService\\AuctionService.csproj",
   "expectedPackageFiles": [
@@ -140,10 +140,10 @@
     "C:\\Users\\PC_LION\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\PC_LION\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\PC_LION\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\PC_LION\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
-    "C:\\Users\\PC_LION\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
-    "C:\\Users\\PC_LION\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
-    "C:\\Users\\PC_LION\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
+    "C:\\Users\\PC_LION\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\PC_LION\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\PC_LION\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.19\\microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\PC_LION\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.19\\microsoft.netcore.app.host.win-x64.7.0.19.nupkg.sha512"
   ],
   "logs": []
 }
